@@ -1,0 +1,21 @@
+[
+    {
+        "fname": "Test1",
+        "mname": "Automate1",
+        "lname": "Code1",
+        "email": "testcodeautomate1@gmail.com"
+    },
+    {
+
+        "fname": "Test2",
+        "mname": "Automate2",
+        "lname": "Code2",
+        "email": "testcodeautomate2@gmail.com"
+    },
+    {
+        "fname": "ABC",
+        "mname": "PQR",
+        "lname": "xyz",
+        "email": "abc@gmail.com"
+    }
+]

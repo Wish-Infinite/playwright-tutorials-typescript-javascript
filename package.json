@@ -1,0 +1,25 @@
+{
+  "name": "playwrightwithtypescriptconcepts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:dev": "cross-env TEST_ENV=dev npx playwright test",
+    "test:UAT": "cross-env TEST_ENV=uat npx playwright test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.42.1",
+    "@types/node": "^20.8.4"
+  },
+  "dependencies": {
+    "allure-playwright": "^2.15.1",
+    "cross-env": "^7.0.3",
+    "csv-parse": "^5.5.4",
+    "dotenv": "^16.4.5",
+    "exceljs": "^4.4.0",
+    "read-excel-file": "^5.7.1"
+  }
+}
