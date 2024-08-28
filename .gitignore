@@ -5,11 +5,3 @@ node_modules/
 /allure-report/
 /allure-results/
 .vscode/
-/test-results/
-/playwright-report/
-/blob-report/
-/playwright/.cache/
-/test-results/
-/playwright-report/
-/blob-report/
-/playwright/.cache/
