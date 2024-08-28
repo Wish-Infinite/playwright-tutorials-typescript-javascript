@@ -34,8 +34,8 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : 1,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  //reporter:[ ['html',{open:'on-failure'}]],
-  reporter : [['junit',{outputFile:'xyz/report4junit.xml'}]],
+  reporter:[ ['html',{open:'on-failure'}]],
+  //reporter : [['junit',{outputFile:'xyz/report4junit.xml'}]],
   //reporter:process.env.CI?'dot':'list',
   //reporter:"allure-playwright",
   //reporter:[["allure-playwright", {outputFolder:"GoogleAllureResults4"}],["html"]],
