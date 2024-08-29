@@ -21,7 +21,7 @@ test("Practice Test 3", async ({ page }) => {
     console.log("Starting Practice Test 3");
     await page.goto("https://www.saucedemo.com/");
     console.log(await page.title());
-    expect(page).toHaveTitle("Swag Labs Wrong")
+    expect(page).toHaveTitle("Swag Labs")
     console.log("Ending Practice Test 3");
 })
 
@@ -34,7 +34,7 @@ test.describe("Practice of Describe", async () => {
         console.log("Starting Practice Test 4");
         await page.goto("https://www.saucedemo.com/");
         console.log(await page.title());
-        expect(page).toHaveTitle("Swag Labs Wrong")
+        expect(page).toHaveTitle("Swag Labs")
         console.log("Ending Practice Test 4");
     })
 
