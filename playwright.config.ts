@@ -50,7 +50,7 @@ export default defineConfig({
       // Authorization: "Basic YWRtaW46cGFzc3dvcmQxMjM="
     },
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    headless: true,
+    headless: false,
     screenshot:'only-on-failure',
     video:'retain-on-failure',
     trace:'retain-on-failure',
