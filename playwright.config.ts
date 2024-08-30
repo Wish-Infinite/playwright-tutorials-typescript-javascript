@@ -36,7 +36,8 @@ export default defineConfig({
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   //reporter:[ ['html',{open:'on-failure'}]],
   //reporter : [['junit',{outputFile:'xyz/report4junit.xml'}]],
-  reporter:process.env.CI?'github':'html',
+  reporter:[["html"],["github"]],
+  //reporter:process.env.CI?'github':'html',
   //reporter:"allure-playwright",
   //reporter:[["allure-playwright", {outputFolder:"GoogleAllureResults4"}],["html"]],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
