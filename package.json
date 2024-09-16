@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test:dev": "cross-env TEST_ENV=dev npx playwright test",
-    "test:UAT": "cross-env TEST_ENV=uat npx playwright test"
+    "test:UAT": "cross-env TEST_ENV=uat npx playwright test",
+    "test1": "cross-env TEST_ENV=dev npx playwright test --project=chromium --headed"
   },
   "keywords": [],
   "author": "",
