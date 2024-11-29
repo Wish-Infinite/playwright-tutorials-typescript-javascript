@@ -13,11 +13,13 @@
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.46.1",
+    "@types/crypto-js": "^4.2.2",
     "@types/node": "^20.8.4"
   },
   "dependencies": {
     "allure-playwright": "^2.15.1",
     "cross-env": "^7.0.3",
+    "crypto-js": "^4.2.0",
     "csv-parse": "^5.5.4",
     "dotenv": "^16.4.5",
     "exceljs": "^4.4.0",
