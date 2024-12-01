@@ -20,7 +20,7 @@ git clone https://github.com/Wish-Infinite/playwright-tutorials-typescript-javas
 npm install
 
 ## Note 
-**All the Test Scripts Used in Playwright Tutorials Playlist Can be found in Archive folder at - https://github.com/Wish-Infinite/playwright-tutorials-typescript-javascript/tree/main/archive**
+**All the Test Scripts Used in Playwright Tutorials Playlist Can be found in "archive" folder at - https://github.com/Wish-Infinite/playwright-tutorials-typescript-javascript/tree/main/archive**
 
 <br><br><br>
 
