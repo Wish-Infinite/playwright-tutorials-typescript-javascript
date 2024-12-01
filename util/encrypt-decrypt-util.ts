@@ -9,4 +9,4 @@ export function encryptData(data: string){
 
 export function decryptData(encData: string){
     return CryptoJS.AES.decrypt(encData, secreKey).toString(CryptoJS.enc.Utf8);
-}
+} 
