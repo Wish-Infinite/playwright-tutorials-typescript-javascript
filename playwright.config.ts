@@ -40,7 +40,7 @@ export default defineConfig({
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   //reporter:[ ['html',{open:'on-failure'}]],
   //reporter : [['junit',{outputFile:'xyz/report4junit.xml'}]],
-  reporter:[["html"],["github"]],
+  //reporter:[["html"],["github"]],
   //reporter:process.env.CI?'github':'html',
   //reporter:"allure-playwright",
   //reporter:[["allure-playwright", {outputFolder:"GoogleAllureResults4"}],["html"]],
@@ -55,10 +55,9 @@ export default defineConfig({
       // Authorization: "Basic YWRtaW46cGFzc3dvcmQxMjM="
     },
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    headless: false,
     screenshot:'only-on-failure',
     video:'retain-on-failure',
-    trace:'on',
+    // trace:'on',
     //storageState:"./playwright/.auth/auth.json",
   },
   timeout: 30000,
