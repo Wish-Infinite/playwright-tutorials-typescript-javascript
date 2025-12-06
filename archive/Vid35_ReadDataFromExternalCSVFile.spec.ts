@@ -9,7 +9,7 @@ const records = parse(fs.readFileSync("testdata/testdata.csv"), {
 })
 
 records.forEach((record)=>{
-    test(`Get Data from CSV - ${record.Id}`, async ({  page }) => {
+    test(`Get Data from CSV forEach practice - ${record.Id}`, async ({  page }) => {
         //console.log(records);
         await page.goto("https://demoqa.com/automation-practice-form");
         await page.getByPlaceholder('First Name').fill(record.FirstName);
@@ -21,7 +21,7 @@ records.forEach((record)=>{
 
 for (const record of records) {
 
-    test(`Get Data from CSV - ${record.Id}`, async ({ page }) => {
+    test(`Get Data from CSV for loop practice- ${record.Id}`, async ({ page }) => {
         //console.log(records);
         await page.goto("https://demoqa.com/automation-practice-form");
         await page.getByPlaceholder('First Name').fill(record.FirstName);

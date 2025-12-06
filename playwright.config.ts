@@ -10,7 +10,7 @@ import path from 'path';
 //   path: process.env.TEST_ENV ? `./env-files/.env.${process.env.TEST_ENV}` : `./env-files/.env.dev`
 // })
 dotenv.config({
-  path: path.resolve('testdata','.env')//"./testdata/.env"
+  path: path.resolve('testdata', '.env')//"./testdata/.env"
 })
 /**
  * See https://playwright.dev/docs/test-configuration.
@@ -22,7 +22,7 @@ export default defineConfig({
   //grep:/UI/,
   //grepInvert:/sanity/,
   //globalSetup: "./global-setup.ts",
-  testDir: './tests',
+  testDir: './',
   // expect:{
   //   toHaveScreenshot:{
   //     maxDiffPixels:20,
@@ -34,13 +34,13 @@ export default defineConfig({
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
   /* Retry on CI only */
-  retries: process.env.CI ? 1 : 0,   
+  retries: process.env.CI ? 1 : 0,
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : 1,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   //reporter:[ ['html',{open:'on-failure'}]],
   //reporter : [['junit',{outputFile:'xyz/report4junit.xml'}]],
-  reporter:[["html"],["github"]],
+  //reporter:[["html"],["github"]],
   //reporter:process.env.CI?'github':'html',
   //reporter:"allure-playwright",
   //reporter:[["allure-playwright", {outputFolder:"GoogleAllureResults4"}],["html"]],
@@ -48,17 +48,16 @@ export default defineConfig({
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://127.0.0.1:3000',
-    baseURL:"https://restful-booker.herokuapp.com",
-    extraHTTPHeaders:{
-      Accept:"application/json",
-      "Content-Type":"application/json",
+    baseURL: "https://restful-booker.herokuapp.com",
+    extraHTTPHeaders: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
       // Authorization: "Basic YWRtaW46cGFzc3dvcmQxMjM="
     },
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    headless: false,
-    screenshot:'only-on-failure',
-    video:'retain-on-failure',
-    trace:'on',
+    screenshot: 'only-on-failure',
+    video: 'retain-on-failure',
+    // trace:'on',
     //storageState:"./playwright/.auth/auth.json",
   },
   timeout: 30000,
