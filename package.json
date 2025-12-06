@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.46.1",
+    "@playwright/test": "^1.52.0",
     "@types/crypto-js": "^4.2.2",
     "@types/node": "^20.8.4"
   },
